@@ -12,5 +12,7 @@ namespace WasteEater.BusinessLogic.Models
         public Product product { get; set; }
 
         public string storeInfo { get; set; }
+
+        public string storeId { get; set; }
     }
 }

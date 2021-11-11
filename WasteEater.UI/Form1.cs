@@ -15,11 +15,20 @@ namespace WasteEater.UI
     public partial class Form1 : Form
     {
 
+        private int ZIPCode = 9000;
+        Store[] Stores;
+
         public Form1()
         {
             InitializeComponent();
-
             
+
+            Stores = DataHandler.GetStores(ZIPCode);
+
+            for(int i = 0; i < Stores.Length; i++)
+            {
+                storeComboBox.Items.Add(Stores[i].brand + "; " + Stores[i].address.street);
+            }
 
             
         }
@@ -36,26 +45,61 @@ namespace WasteEater.UI
 
         private void getDataButton_Click(object sender, EventArgs e)
         {
-            Clearance[] products = DataHandler.GetProductDataByZIPCode(9000);
+            Clearance[] products = Array.Empty<Clearance>();
+
+            if(storeComboBox.SelectedIndex >= 0)
+            {
+                for(int i = 0; i < Stores.Length; i++)
+                {
+                    if(i == storeComboBox.SelectedIndex)
+                    {
+                        products = DataHandler.GetProductDataByStoreId(Stores[i].id);
+                    }
+                }
+            }
+            else
+            {
+                products = DataHandler.GetProductDataByZIPCode(ZIPCode);
+            }
+            
+            products = SortingDataManager.SortProductsByLastUpdate(products);
+
             generateProducts(products);
         }
 
 
 
 
+
+        Panel[] panels;
+        Label[] storeInfoLabels;
+        Label[] updatedLabels;
+        Label[] experationLabels;
+        Label[] piecesLabels;
+        Label[] oldPriceLabels;
+        Label[] newPriceLabels;
+        Label[] nameLabels;
+        PictureBox[] pictureBoxes;
+
         private void generateProducts(Clearance[] products)
         {
+            clearProducts();
 
-            Panel[] panels = new Panel[products.Count()];
-            Label[] storeInfoLabels = new Label[products.Count()];
-            Label[] updatedLabels = new Label[products.Count()];
-            Label[] experationLabels = new Label[products.Count()];
-            Label[] piecesLabels = new Label[products.Count()];
-            Label[] oldPriceLabels = new Label[products.Count()];
-            Label[] newPriceLabels = new Label[products.Count()];
-            Label[] nameLabels = new Label[products.Count()];
-            PictureBox[] pictureBoxes = new PictureBox[products.Count()];
+            flowLayoutPanel1.SuspendLayout();
 
+
+            panels = new Panel[products.Count()];
+            storeInfoLabels = new Label[products.Count()];
+            updatedLabels = new Label[products.Count()];
+            experationLabels = new Label[products.Count()];
+            piecesLabels = new Label[products.Count()];
+            oldPriceLabels = new Label[products.Count()];
+            newPriceLabels = new Label[products.Count()];
+            nameLabels = new Label[products.Count()];
+            pictureBoxes = new PictureBox[products.Count()];
+
+
+            
             for(int i = 0; i < products.Count(); i++)
             {
                 panels[i] = new Panel();
@@ -84,10 +128,11 @@ namespace WasteEater.UI
                 panels[i].Controls.Add(newPriceLabels[i]);
                 panels[i].Controls.Add(nameLabels[i]);
                 panels[i].Controls.Add(pictureBoxes[i]);
-                panels[i].Location = new System.Drawing.Point(3, 3);
-                panels[i].Name = "productLayout";
+                panels[i].Margin = new Padding(3);
+                panels[i].Location = new System.Drawing.Point(0,0);
+                panels[i].Name = "productLayout" + i;
                 panels[i].Size = new System.Drawing.Size(240, 334);
-                panels[i].TabIndex = 0;
+                panels[i].TabIndex = i;
                 // 
                 // storeInfoLabel
                 // 
@@ -97,7 +142,7 @@ namespace WasteEater.UI
                 storeInfoLabels[i].Name = "storeInfoLabel";
                 storeInfoLabels[i].Size = new System.Drawing.Size(103, 20);
                 storeInfoLabels[i].TabIndex = 7;
-                storeInfoLabels[i].Text = products[i].storeInfo;
+                storeInfoLabels[i].Text = "Store: "+products[i].storeInfo;
                 // 
                 // updatedLabel
                 // 
@@ -107,17 +152,30 @@ namespace WasteEater.UI
                 updatedLabels[i].Name = "updatedLabel";
                 updatedLabels[i].Size = new System.Drawing.Size(74, 20);
                 updatedLabels[i].TabIndex = 6;
-                updatedLabels[i].Text = "Updated: " + products[i].offer.lastUpdate;
+
+                TimeSpan timeDifference =  DateTime.Now - products[i].offer.lastUpdate;
+
+                int totalMinutes = (int)timeDifference.TotalMinutes;
+                int hours = totalMinutes / 60;
+                updatedLabels[i].Text = "Updated: " +( hours >= 1 ? hours + " hrs " + totalMinutes % 60 + " mins" : totalMinutes.ToString() + " mins") + " ago";
                 // 
                 // experationLabel
                 // 
+
+                timeDifference = products[i].offer.endTime - DateTime.Now;
+
+                totalMinutes = (int)timeDifference.TotalMinutes;
+                hours = totalMinutes / 60;
+                int days = hours / 24;
+
+
+                experationLabels[i].Text = "Experation: " + ((hours >= 24) ? days + "d " + hours % 24 + "hrs" : hours + "hrs " + totalMinutes % 60 + "min");
                 experationLabels[i].AutoSize = true;
                 experationLabels[i].Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
                 experationLabels[i].Location = new System.Drawing.Point(20, 210);
                 experationLabels[i].Name = "experationLabel";
                 experationLabels[i].Size = new System.Drawing.Size(87, 20);
                 experationLabels[i].TabIndex = 5;
-                experationLabels[i].Text = "Experation: " + products[i].offer.endTime;
                 // 
                 // piecesLabel
                 // 
@@ -167,7 +225,7 @@ namespace WasteEater.UI
                 pictureBoxes[i].MaximumSize = new System.Drawing.Size(200, 200);
                 pictureBoxes[i].Name = "pictureBox1";
                 pictureBoxes[i].Size = new System.Drawing.Size(190, 90);
-                pictureBoxes[i].SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+                pictureBoxes[i].SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
                 pictureBoxes[i].TabIndex = 0;
                 pictureBoxes[i].TabStop = false;
 
@@ -180,6 +238,24 @@ namespace WasteEater.UI
                 panels[i].PerformLayout();
                 ((System.ComponentModel.ISupportInitialize)(pictureBoxes[i])).EndInit();
             }
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
+        }
+
+        private void clearProducts()
+        {
+            if(panels != null && panels.Count() > 0)
+            {
+                for(int i =0; i < panels.Count(); i++)
+                {
+                    flowLayoutPanel1.Controls.Remove(panels[i]);
+                }
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\CallM\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\CallM\\.nuget\\packages"
+      "C:\\Users\\bodah\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\bodah\\.nuget\\packages"
     ]
   }
 }

@@ -10,9 +10,18 @@ namespace WasteEater.BusinessLogic
 {
     public class DataParser
     {
-        public static Root[] ParseData(string json)
+        public static Root[] ParseRoots(string json)
         {
             return JsonConvert.DeserializeObject<Root[]>(json);
+        }
+        public static Root ParseRoot(string json)
+        {
+            return JsonConvert.DeserializeObject<Root>(json);
+        }
+
+        public static Store[] ParseStores(string json)
+        {
+            return JsonConvert.DeserializeObject<Store[]>(json);
         }
     }
 }

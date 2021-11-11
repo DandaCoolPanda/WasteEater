@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasteEater.BusinessLogic", "WasteEater.BusinessLogic\WasteEater.BusinessLogic.csproj", "{0669E791-2CFB-49C0-B464-333EC3D9A185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WasteEater.UI", "WasteEater.UI\WasteEater.UI.csproj", "{885704F3-B940-4BE7-8855-483FB902D56F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0669E791-2CFB-49C0-B464-333EC3D9A185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0669E791-2CFB-49C0-B464-333EC3D9A185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0669E791-2CFB-49C0-B464-333EC3D9A185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0669E791-2CFB-49C0-B464-333EC3D9A185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{885704F3-B940-4BE7-8855-483FB902D56F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885704F3-B940-4BE7-8855-483FB902D56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885704F3-B940-4BE7-8855-483FB902D56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885704F3-B940-4BE7-8855-483FB902D56F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56725B6E-6822-4247-AB1D-3F3A5E589EDC}
+	EndGlobalSection
+EndGlobal

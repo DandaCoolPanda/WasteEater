@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YOfdZDtd8A2KkjGLfxkAI/AAheFWc4kKFtE3EM0PhpOf267QvQsHel6qdsbBfrN3jqGOzI6FaPncJlg5SZnXRg==",
+  "dgSpecHash": "0JL36qCIMzEFHsPCqpecuTV5t+rB/9bjS01BCV0f/e6RNHPZ15/6eBvABta2d6HjWQWxYxXifhMmmtuSNXS2uA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.UI\\WasteEater.UI.csproj",
+  "projectFilePath": "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.UI\\WasteEater.UI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\CallM\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\bodah\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

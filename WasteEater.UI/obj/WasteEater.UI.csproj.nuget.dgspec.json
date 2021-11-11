@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.UI\\WasteEater.UI.csproj": {}
+    "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.UI\\WasteEater.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.BusinessLogic\\WasteEater.BusinessLogic.csproj": {
+    "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.BusinessLogic\\WasteEater.BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.BusinessLogic\\WasteEater.BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.BusinessLogic\\WasteEater.BusinessLogic.csproj",
         "projectName": "WasteEater.BusinessLogic",
-        "projectPath": "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.BusinessLogic\\WasteEater.BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\CallM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.BusinessLogic\\obj\\",
+        "projectPath": "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.BusinessLogic\\WasteEater.BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\bodah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CallM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bodah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,17 +64,17 @@
         }
       }
     },
-    "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.UI\\WasteEater.UI.csproj": {
+    "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.UI\\WasteEater.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.UI\\WasteEater.UI.csproj",
+        "projectUniqueName": "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.UI\\WasteEater.UI.csproj",
         "projectName": "WasteEater.UI",
-        "projectPath": "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.UI\\WasteEater.UI.csproj",
-        "packagesPath": "C:\\Users\\CallM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.UI\\obj\\",
+        "projectPath": "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.UI\\WasteEater.UI.csproj",
+        "packagesPath": "C:\\Users\\bodah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\CallM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bodah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,8 +88,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.BusinessLogic\\WasteEater.BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.BusinessLogic\\WasteEater.BusinessLogic.csproj"
+              "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.BusinessLogic\\WasteEater.BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\bodah\\Documents\\VS_Projects\\WasteEater\\WasteEater.BusinessLogic\\WasteEater.BusinessLogic.csproj"
               }
             }
           }

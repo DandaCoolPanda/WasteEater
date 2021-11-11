@@ -10,8 +10,8 @@ namespace WasteEater.BusinessLogic.Models
     {
         public string date { get; set; }
         public string type { get; set; }
-        public DateTime open { get; set; }
-        public DateTime close { get; set; }
+        public DateTime? open { get; set; }
+        public DateTime? close { get; set; }
         public bool closed { get; set; }
         public List<double> customerFlow { get; set; }
     }

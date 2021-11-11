@@ -6,8 +6,8 @@
       "version": "5.0.0"
     },
     "additionalProbingPaths": [
-      "C:\\Users\\CallM\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\CallM\\.nuget\\packages"
+      "C:\\Users\\bodah\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\bodah\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

@@ -27,7 +27,46 @@ namespace WasteEater.BusinessLogic
 
         }
 
+        public static string GetStores(int zip)
+        {
+            var url = "https://api.sallinggroup.com/v2/stores/?zip=" + zip;
+
+            var httpRequest = (HttpWebRequest)WebRequest.Create(url);
+
+            httpRequest.Accept = "application/json";
+            httpRequest.Headers["Authorization"] = "Bearer 50297c77-9a1a-4eb5-8867-12bff6caa9b2";
 
 
+            var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+            var result = "";
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                result = streamReader.ReadToEnd();
+            }
+
+            return result;
+
+        }
+
+        public static string GetProductsFromStore(string id)
+        {
+            var url = "https://api.sallinggroup.com/v1/food-waste/" + id;
+
+            var httpRequest = (HttpWebRequest)WebRequest.Create(url);
+
+            httpRequest.Accept = "application/json";
+            httpRequest.Headers["Authorization"] = "Bearer 50297c77-9a1a-4eb5-8867-12bff6caa9b2";
+
+
+            var httpResponse = (HttpWebResponse)httpRequest.GetResponse();
+            var result = "";
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                result = streamReader.ReadToEnd();
+            }
+
+            return result;
+
+        }
     }
 }
