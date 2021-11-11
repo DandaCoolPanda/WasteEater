@@ -1,0 +1,12 @@
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\bin\Debug\net5.0\WasteEater.BusinessLogic.deps.json
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\bin\Debug\net5.0\WasteEater.BusinessLogic.dll
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\bin\Debug\net5.0\ref\WasteEater.BusinessLogic.dll
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\bin\Debug\net5.0\WasteEater.BusinessLogic.pdb
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\obj\Debug\net5.0\WasteEater.BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\obj\Debug\net5.0\WasteEater.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\obj\Debug\net5.0\WasteEater.BusinessLogic.AssemblyInfoInputs.cache
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\obj\Debug\net5.0\WasteEater.BusinessLogic.AssemblyInfo.cs
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\obj\Debug\net5.0\WasteEater.BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\obj\Debug\net5.0\WasteEater.BusinessLogic.dll
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\obj\Debug\net5.0\ref\WasteEater.BusinessLogic.dll
+C:\Users\CallM\source\repos\WasteEater\WasteEater.BusinessLogic\obj\Debug\net5.0\WasteEater.BusinessLogic.pdb

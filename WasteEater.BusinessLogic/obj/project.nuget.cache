@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UVFj9F2eCCrAYeRXtDdsMk7is9/55A7/4zMy3zCzvsrEzoKpRap0e0hX0oTflnyZ6dxBRmizSBBnCl0vODXobw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\CallM\\source\\repos\\WasteEater\\WasteEater.BusinessLogic\\WasteEater.BusinessLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\CallM\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
